@@ -1,7 +1,7 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 var _server = _interopRequireDefault(require("./server"));
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
-_server["default"].listen(3000, function () {
-  console.log("Backend ejecutandose en el puerto: 3000");
+_server["default"].listen(_server["default"].get("port"), function () {
+  console.log("Backend ejecutandose en el puerto: ".concat(_server["default"].get("port")));
 });

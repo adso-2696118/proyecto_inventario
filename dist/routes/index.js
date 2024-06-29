@@ -1,5 +1,6 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -9,7 +10,6 @@ var _routes = _interopRequireDefault(require("./routes.user"));
 var _routes2 = _interopRequireDefault(require("./routes.product"));
 var _swaggerUiExpress = _interopRequireDefault(require("swagger-ui-express"));
 var _swaggerOutput = _interopRequireDefault(require("../tools/swagger-output.json"));
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 var ruta = (0, _express.Router)();
 ruta.use("/api", _routes["default"]);
 ruta.use("/api", _routes2["default"]);

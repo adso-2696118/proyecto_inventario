@@ -1,8 +1,8 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 var _swaggerAutogen = _interopRequireDefault(require("swagger-autogen"));
 var _dotenv = require("dotenv");
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 (0, _dotenv.config)();
 var port = process.env.PORT || 3000;
 var doc = {
